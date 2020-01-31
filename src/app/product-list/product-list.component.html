@@ -1,0 +1,14 @@
+<h2>Our Awesome Products</h2>
+
+<article *ngFor="let product of products">
+  <header>
+    <h1>
+      <a title="{{product.name}}">{{ product.name }}</a>
+    </h1>
+  </header>
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  <button (click)="share()">Share</button>
+</article>
+<!-- * asterisk means structural directive (adding, removing, manipulating elements they are attached to) -->
