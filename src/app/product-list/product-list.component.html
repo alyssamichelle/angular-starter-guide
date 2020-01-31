@@ -10,5 +10,6 @@
     Description: {{ product.description }}
   </p>
   <button (click)="share()">Share</button>
+  <product-alerts [product]="product" (notify)="onNotify()"></product-alerts>
 </article>
 <!-- * asterisk means structural directive (adding, removing, manipulating elements they are attached to) -->
